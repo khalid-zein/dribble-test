@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+.body{
+  background-color: #30363b;
+  position: relative;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav{
+  height: 80px;
+  box-shadow: 10px 10px 15px #000, -2px -2px #000;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.nav .app{
+  font-family: 'Monoton', cursive;
+  font-size: 40px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nav .app:hover{
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav .navitem{
+  margin: 0 10px;
+  position: relative;
+  font-size: 25px;
+  font-family: 'Quantico', sans-serif;
+  color: white;
+}
+.nav .navitem:hover{
+  color: white;
+}
+.nav .navitem::after{
+  content: '';
+  position: absolute;
+  background-color: #f48915;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 1px;
+  transition: 0.5s;
+}
+.nav .navitem:hover::after{
+  width: 100%;
+}
+.description .about-app{
+  height: 65vh;
+  width: 40%;
+  position: relative;
+  margin-top: 5%;
+  margin-left: 2%;
+}
+.description .about-app h1{
+  font-family: 'Monoton', cursive;
+  color: white;
+  font-size: 60px;
+}
+.description .about{
+  height: 60%;
+  width: 70%;
+  position: absolute;
+  left: 18%;
+  font-family: 'Quantico', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  color: #f48915;
+}
+.description .about-app .started{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    width: 40%;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 25px;
+}
+.description .about-app .started button{
+  margin-left: 30%;
+  background-color: rgb(61, 221, 221);
+  color: white;
+  border: none;
+}
+.image{
+  height: 65vh;
+  width: 45%;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+}
+.image img{
+  width: 50%;
+  height: 50%;
+}
+.image .img2{
+  position: absolute;
+  left: 60%;
+}
+.image .img3{
+  position: absolute;
+  top: 20%;
+}
+.image .img4{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.footer{
+  height: 60px;
+  margin-top: 5.3%;
+  box-shadow: 20px 20px 25px #000, -2px -2px #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .button{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #f48915;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.footer .button:hover{
+  width: 150px;
+}
+.footer .button .icon{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+.footer .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.footer .button:nth-child(2):hover .icon{
+  background: #333;
+}
+.footer .button:nth-child(3):hover .icon{
+  background: #1DA1F2;
+}
+.footer .button:nth-child(4):hover .icon{
+  background: #ff0000;
+}
+.footer .button .icon i{
+  font-size: 20px;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+.footer .button:hover .icon i{
+  color: #fff;
+}
+.footer .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 40px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.footer .button:nth-child(1) span{
+  color: #4267B2;
+}
+.footer .button:nth-child(2) span{
+  color: #333;
+}
+.footer .button:nth-child(3) span{
+  color: #1DA1F2;
+}
+.footer .button:nth-child(4) span{
+  color: #ff0000;
+}
+.project{
+  width: 99%;
+}
+.title{
+  font-size: 50px !important;
+}
+.alert{
+  background-color: #f48915 !important;
+  border: none !important;
+  color: white !important;
+  font-size: 20px;
+  font-family: 'Signika Negative', sans-serif;
+}
+.test{
+  border: none !important;
+  background-color: rgb(61, 221, 221) !important;
+  color: white;
+  border: none;
+}
+.add{
+  background-color: #f48915 !important;
+  border-radius: 3px !important;
+  margin: 1%;
+  color: white !important;
+}
+.edit{
+  background-color: #f48915 !important;
+  color: white !important;
+}
+.col{
+  margin-left: 1%;
+}
+.card{
+  background-color: #30363b !important;
+  border: none !important;
+  box-shadow: 10px 10px 15px rgb(78, 75, 75);
+  color: white;
+  font-family: 'Signika Negative', sans-serif;
+  margin-top: 5%;
+}
+.profile{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+.profile .pic{
+  border-radius: 250px;
 }
